@@ -32,8 +32,11 @@ node reactiveoperators.js <operator_name>
 
 Example:
 node reactiveoperators.js map
+
 SAMPLE OUTPUTS: map -> 10 map -> 20 map -> 30
+
 filter -> 2 filter -> 4 filter -> 6
+
 reduce -> 15
 
 CONCLUSION:
