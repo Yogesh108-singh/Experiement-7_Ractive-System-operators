@@ -5,7 +5,6 @@ Explain all Reactive Stream Operators with proper code references and examples. 
 THEORY:
 
 Reactive stream operators are small functions that modify or control data flowing through a stream. Instead of processing all data at once, they handle it asynchronously — as soon as data arrives. Operators can transform, filter, merge, or summarize values in real time.
-KEY OPERATORS USED: Operator Purpose Example map() Transforms each value 1,2,3 → 10,20,30 filter() Filters data based on a condition Keep only even numbers mergeMap() Flattens inner observables concurrently A,B → A1,A2,B1,B2 (unordered) concatMap() Flattens inner observables sequentially A,B → A1,A2,B1,B2 merge() Merges multiple observables Mixes data streams together concat() Runs observables one after another [1,2,3] + [4,5] = [1,2,3,4,5] zip() Pairs values by index (X,Y,Z) + (1,2) = (X,1), (Y,2) reduce() Aggregates all values into one result Sum of 1..5 = 15 PROGRAM EXECUTION:
 
 Prerequisites:
 - [Node.js](https://nodejs.org/) installed (v18+ recommended)
@@ -18,7 +17,7 @@ node reactiveoperators.js <operator_name>
 
 
 | Operator    | Description                                        |
-| ----------- | -------------------------------------------------- |
+| ----------- | -------------------------------------------------- | 
 | `map`       | Transforms each emitted value using a function     |
 | `filter`    | Filters out values that don’t match a condition    |
 | `mergeMap`  | Flattens multiple inner Observables concurrently   |
