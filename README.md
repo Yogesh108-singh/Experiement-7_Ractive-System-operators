@@ -16,15 +16,17 @@ Prerequisites:
 Each operator runs interactively from the terminal using process arguments:
 node reactiveoperators.js <operator_name>
 
-Operator	   Description
-map	      -   Transforms each emitted value using a function
-filter	  -   Filters out values that don’t match a condition
-mergeMap	-   Flattens multiple inner Observables concurrently
-concatMap	-   Flattens Observables sequentially
-merge	    -   Merges multiple Observables into one
-concat	  -   Concatenates Observables in sequence
-zip	      -   Combines values from multiple Observables pairwise
-reduce	  -   Aggregates emitted values into a single result
+
+| Operator    | Description                                        |
+| ----------- | -------------------------------------------------- |
+| `map`       | Transforms each emitted value using a function     |
+| `filter`    | Filters out values that don’t match a condition    |
+| `mergeMap`  | Flattens multiple inner Observables concurrently   |
+| `concatMap` | Flattens Observables sequentially                  |
+| `merge`     | Merges multiple Observables into one               |
+| `concat`    | Concatenates Observables in sequence               |
+| `zip`       | Combines values from multiple Observables pairwise |
+| `reduce`    | Aggregates emitted values into a single result     |
 
   
 
